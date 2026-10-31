@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Endpoint Not Found | Priya Couture API</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #0d0f17 0%, #171b26 50%, #201a24 100%);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: #f3e8d9;
+      padding: 24px;
+    }
+    .card {
+      max-width: 580px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(212, 175, 55, 0.25);
+      border-radius: 20px;
+      padding: 48px 40px;
+      text-align: center;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 16px;
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      border-radius: 9999px;
+      color: #d4af37;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 72px;
+      font-weight: 700;
+      color: #d4af37;
+      line-height: 1;
+      margin-bottom: 12px;
+      text-shadow: 0 4px 16px rgba(212, 175, 55, 0.3);
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: #ffffff;
+    }
+    p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #b5a999;
+      margin-bottom: 32px;
+    }
+    .endpoints {
+      background: rgba(0, 0, 0, 0.35);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 16px 20px;
+      text-align: left;
+      margin-bottom: 28px;
+    }
+    .endpoints-title {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #d4af37;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+    .endpoint-item {
+      font-family: monospace;
+      font-size: 13px;
+      color: #e2d9cc;
+      margin: 4px 0;
+    }
+    .endpoint-item span {
+      color: #48bb78;
+      font-weight: bold;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%);
+      color: #0b0c10;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 9999px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 14px rgba(212, 175, 55, 0.4);
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(212, 175, 55, 0.6);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="badge">Priya Couture API</div>
+    <h1>404</h1>
+    <h2>Requested API Endpoint Not Found</h2>
+    <p>The REST endpoint you requested does not exist or has been relocated in the Priya Couture E-Commerce backend service.</p>
+    
+    <div class="endpoints">
+      <div class="endpoints-title">Available Public Endpoints</div>
+      <div class="endpoint-item"><span>POST</span> /api/auth/register</div>
+      <div class="endpoint-item"><span>POST</span> /api/auth/login</div>
+      <div class="endpoint-item"><span>POST</span> /api/auth/token</div>
+      <div class="endpoint-item"><span>GET </span> /api/health</div>
+      <div style="margin-top: 8px;" class="endpoints-title">Protected Endpoints (Bearer JWT)</div>
+      <div class="endpoint-item"><span>GET </span> /api/priya/ecommerce/users/profile</div>
+      <div class="endpoint-item"><span>GET </span> /api/priya/ecommerce/users/list</div>
+    </div>
+
+    <a href="/api/health" class="btn">Check API Health</a>
+  </div>
+</body>
+</html>
